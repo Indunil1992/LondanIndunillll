@@ -1,0 +1,119 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "ecd2023a-274c-4aaf-82fc-17b94a02354a": {
+        "id": "ecd2023a-274c-4aaf-82fc-17b94a02354a",
+        "parent": null,
+        "name": "LondanIndunillll",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "9fb12a92-a12e-475c-b682-a48325e11a09"
+        ],
+        "isRemovable": false,
+        "filePath": "LondanIndunillll"
+      },
+      "9fb12a92-a12e-475c-b682-a48325e11a09": {
+        "id": "9fb12a92-a12e-475c-b682-a48325e11a09",
+        "parent": "ecd2023a-274c-4aaf-82fc-17b94a02354a",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "LondanIndunillll/lambda.js",
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigeuWest2testLonindunilqaany",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "6940a606-08ca-4153-9122-6864d3085cb6": {
+            "id": "6940a606-08ca-4153-9122-6864d3085cb6",
+            "name": "Test event",
+            "functionId": "9fb12a92-a12e-475c-b682-a48325e11a09",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "rootNode": "ecd2023a-274c-4aaf-82fc-17b94a02354a",
+    "openFiles": [
+      "9fb12a92-a12e-475c-b682-a48325e11a09"
+    ],
+    "currentFileId": "9fb12a92-a12e-475c-b682-a48325e11a09",
+    "resources": {
+      "apigeuWest2testLonindunilqaany": {
+        "name": "apigeuWest2testLonindunilqaany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-west-2",
+          "apiMode": 1,
+          "apiName": "testLon",
+          "apiId": "3rvx3xg7o0",
+          "endpointType": "REGIONAL",
+          "rootResourceId": "7v1950bvx3",
+          "existingResources": {
+            "/indunil/qa": "65kq3v",
+            "/": "7v1950bvx3",
+            "/indunil/qa/tst": "8mkz3f",
+            "/indunil": "mb6p7k"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/indunil/qa",
+          "resourceName": "indunil/qa",
+          "resourceId": "65kq3v",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "test1",
+          "stageDeploymentId": "ntx0to",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "LondanIndunillll",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "eu-west-2",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1581497614281
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "LondanIndunillll",
+      "url": "https://github.com/Indunil1992/LondanIndunillll"
+    }
+  }
+}
